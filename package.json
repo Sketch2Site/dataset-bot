@@ -1,0 +1,11 @@
+{
+  "name": "dataset-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Sketch2Site/dataset-bot",
+  "author": "Yash Kumar Verma <yk.verma2000@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^9.1.1"
+  }
+}
