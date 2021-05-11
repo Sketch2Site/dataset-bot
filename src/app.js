@@ -43,6 +43,12 @@ const worker = async (config) => {
     await page.screenshot({
       path: path.join(__dirname, `../storage/navbar/${i}.jpg`),
       captureBeyondViewport: true,
+      clip: {
+        x: 0,
+        y: 0,
+        width: config.window.width,
+        height: 300,
+      },
     });
 
     /** push data for export into array */
