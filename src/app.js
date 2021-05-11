@@ -64,7 +64,7 @@ const worker = async (config) => {
  * configuration that defines runtime behavior of bot
  */
 const config = {
-  sampleSize: 3,
+  sampleSize: 1000,
   url: "http://localhost:5000",
   window: {
     headless: true,
