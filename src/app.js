@@ -41,7 +41,7 @@ const worker = async (config) => {
 
     /** take a screenshot */
     await page.screenshot({
-      path: path.join(__dirname, `../storage/navbar/${i}.jpg`),
+      path: path.join(__dirname, `../storage/paragraph/${i}.jpg`),
       captureBeyondViewport: true,
       clip: {
         x: 0,
