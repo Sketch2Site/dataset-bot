@@ -41,7 +41,7 @@ const worker = async (config) => {
 
     /** take a screenshot */
     await page.screenshot({
-      path: path.join(__dirname, `../storage/paragraph/${i}.jpg`),
+      path: path.join(__dirname, `../storage/${metadata.label}/${i}.jpg`),
       captureBeyondViewport: true,
       clip: {
         x: 0,
@@ -53,7 +53,7 @@ const worker = async (config) => {
 
     /** push data for export into array */
     dataForExport.push(metadata);
-    console.log(`sample.${i}.processed`);
+    console.log(`sample.${metadata.label}.${i}.processed`);
   }
   /** all operations end, close browser */
   await browser.close();
