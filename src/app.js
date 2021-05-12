@@ -47,7 +47,7 @@ const worker = async (config) => {
         x: 0,
         y: 0,
         width: config.window.width,
-        height: 300,
+        height: 600,
       },
     });
 
